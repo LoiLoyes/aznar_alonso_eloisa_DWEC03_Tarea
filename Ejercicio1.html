@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 1</title>
+        <script defer src="Ejercicio1.js"></script>
+        <style>
+            body {
+                width: auto;
+                height: auto;
+                background-color: rgb(247, 149, 146);
+            }
+
+            h1 {
+                width: auto;
+                height: auto;
+                border-radius: 10px;
+                padding: 10px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: x-large;
+                color: white;
+                text-align: center;
+                background-color: rgb(64, 133, 251);
+            }
+
+            #enunciado {
+                width: auto;
+                height: auto;
+                border-radius: 10px;
+                padding: 10px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: medium;
+                color: black;
+                text-align: center;
+                background-color: rgb(251, 98, 93);
+            }
+
+            #boton{      
+                background-color: rgb(25, 92, 208);
+                border-radius: 10px;
+                padding: 8px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: medium;
+                color: white;
+            }
+
+            #contenedor {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #boton:hover {
+                background-color: rgb(68, 163, 204);
+            }
+
+            #boton:active {
+                background-color: rgb(251, 98, 93);
+            }
+
+            #index{
+                
+                background-color: rgb(25, 92, 208);
+                border-radius: 10px;
+                padding: 8px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: medium;
+                color: white;
+                margin: 20px;
+            }
+
+            #contenedorIndex {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                color: black;
+                text-align: center;
+                padding: 15px;   
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>EJERCICIO 1</h1>
+            <p id="enunciado">
+                1. Crea la siguiente aplicación JavaScript: Una página con un botón que al hacer click abre una ventana de tamaño 600 X 400, en la ventana se escribirá la frase "Hoy es dia/mes/año y faltan XX días para fin de año", siendo día, mes, y año, los actuales obtenidos a partir del objeto Date.
+            </p>
+        <div id="contenedor">
+            <button id="boton">Haz Click</button>
+        </div>
+        <footer>
+            <div id="contenedorIndex">
+                <a href="index.html" id="index" class="boton">Volver al Index</a>
+            </div>
+            Eloisa Aznar Alonso - Tarea 3 - DWEC - 2ºDAW
+        </footer>
+    </body>
+</html>

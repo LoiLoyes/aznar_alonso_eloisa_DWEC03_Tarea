@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 2</title>
+        <script defer src="Ejercicio2.js"></script>
+        <style>
+            body {
+                    width: auto;
+                    height: auto;
+                    background-color: rgb(247, 149, 146);
+                }
+
+                h1 {
+                    width: auto;
+                    height: auto;
+                    border-radius: 10px;
+                    padding: 10px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: x-large;
+                    color: white;
+                    text-align: center;
+                    background-color: rgb(64, 133, 251);
+                }
+
+                #enunciado {
+                    width: auto;
+                    height: auto;
+                    border-radius: 10px;
+                    padding: 10px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: medium;
+                    color: black;
+                    text-align: center;
+                    background-color: rgb(251, 98, 93);
+                }
+
+                strong {
+                    font-size: x-large;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin: 20px;
+                }
+
+                #botonComprimir {
+                    background-color: rgb(25, 92, 208);
+                    border-radius: 10px;
+                    padding: 8px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: medium;
+                    color: white;
+                    margin-top: 10px;
+                }
+
+                #botonDescomprimir {
+                    background-color: rgb(25, 92, 208);
+                    border-radius: 10px;
+                    padding: 8px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: medium;
+                    color: white;
+                    margin-top: 10px;
+                }
+
+                input {
+                    margin: 10px;
+                    width: 1000px;
+                    height: 30px;
+                }
+
+                #contenidoComprimido {
+                    margin: 10px;
+                    font-size: x-large;
+                    color: black;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+
+                #contenidoDescomprimido {
+                    margin: 10px;
+                    font-size: x-large;
+                    color: black;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                }
+
+                #index {
+                    
+                    background-color: rgb(25, 92, 208);
+                    border-radius: 10px;
+                    padding: 8px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: medium;
+                    color: white;
+                    margin: 20px;
+                }
+
+                #contenedorIndex {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                footer {
+                    position: fixed;
+                    bottom: 0;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: black;
+                    text-align: center;
+                    padding: 15px;   
+                    width: 100%;
+                }
+        </style>
+    </head>
+    <body>
+        <h1>EJERCICIO 2</h1>
+            <p id="enunciado">
+                2. Vamos utilizar nuestros conocimientos de manipulación de cadenas en javascript, para crear un algoritmo de compresión de cadenas. El algoritmo consiste en sustituir rachas de caracteres repetidos por el número de repeticiones seguido del carácter. El algoritmo sólo actúa con cadenas de caracteres del alfabeto, por lo que arrojará un mensaje de error en caso de que la cadena contenga números. Si admite espacios, en cuyo caso se sustituirá el espacio por una interrogación "?".
+            </p>
+
+        <strong>Función de Compresión de Cadenas</strong>
+        <div id="contenedorComprimir">
+            <button id="botonComprimir">COMPRIMIR CADENA</button>
+            <input id="comprimir" type="text" placeholder="Introduce cadena a comprimir">
+            <div id="contenidoComprimido"></div>
+        </div>
+
+        <strong>Función de Descompresión de Cadenas</strong>
+        <div id="contenedorDescomprimir">
+            <button id="botonDescomprimir">DESCOMPRIMIR CADENA</button>
+            <input id="descomprimir" type="text" placeholder="Introduce la cadena comprimida">
+            <div id="contenidoDescomprimido"></div>
+        </div>
+
+        <footer>
+            <div id="contenedorIndex">
+                <a href="index.html" id="index" class="boton">Volver al Index</a>
+            </div>
+            Eloisa Aznar Alonso - Tarea 3 - DWEC - 2ºDAW
+        </footer>
+    </body>
+</html>
